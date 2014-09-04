@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<methodCall>
+    <methodName>CheckMovieHash</methodName>
+    <params>
+        <param>
+            <value>
+                <string>${token}</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <array>
+                    <data>
+                        <value>
+                            <string>${hash}</string>
+                        </value>
+                    </data>
+                </array>
+            </value>
+        </param>
+    </params>
+</methodCall>
