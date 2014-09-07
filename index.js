@@ -8,7 +8,7 @@ var ProgressBar = require('progress');
 var program = require('./lib/program');
 
 if (!program.directory) {
-  console.error('Directory not given!');
+  console.error('Directory is required!');
   program.help();
 
   process.exit(1);
