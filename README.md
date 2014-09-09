@@ -1,5 +1,7 @@
 # what2watch
 
+[![Build Status](https://travis-ci.org/lucassus/what2watch.svg?branch=master)](https://travis-ci.org/lucassus/what2watch)
+
 Simple tool that scans the given directory for movies and uses OpenSubtitles API to query for details.
 The final results are sorted by rating.
 
