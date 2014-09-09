@@ -4,10 +4,10 @@
   "description": "",
   "main": "./index.js",
   "bin": {
-    "what2watch": "./index.js"
+    "what2watch": "./bin/what2watch"
   },
   "scripts": {
-    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --reporter spec test/**/*Spec.js"
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --reporter spec spec/**/*Spec.js"
   },
   "repository": {
     "type": "git",

@@ -5,7 +5,7 @@ var Q = require('q');
 
 var ProgressBar = require('progress');
 
-var program = require('./lib/program');
+var program = require('../lib/program');
 
 if (!program.directory) {
   console.error('Directory is required!');
@@ -14,14 +14,14 @@ if (!program.directory) {
   process.exit(1);
 }
 
-var OpenSubtitles = require('./lib/openSubtitles');
+var OpenSubtitles = require('../lib/openSubtitles');
 var api = new OpenSubtitles();
 
-var findMovies = require('./lib/findMovies');
-var collectFileStats = require('./lib/collectFileStats');
-var collectInfo = require('./lib/collectInfo');
-var collectDetails = require('./lib/collectDetails');
-var printMovie = require('./lib/printMovie');
+var findMovies = require('../lib/findMovies');
+var collectFileStats = require('../lib/collectFileStats');
+var collectInfo = require('../lib/collectInfo');
+var collectDetails = require('../lib/collectDetails');
+var printMovie = require('../lib/printMovie');
 
 var buildProgressBar = function(format, total) {
   var bar = new ProgressBar(format, { total: total });
