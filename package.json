@@ -17,7 +17,6 @@
   "license": "ISC",
   "dependencies": {
     "Deferred": "^0.1.1",
-    "cheerio": "^0.17.0",
     "colors": "^0.6.2",
     "commander": "^2.3.0",
     "glob": "^4.0.5",
@@ -25,8 +24,6 @@
     "long": "^2.1.0",
     "progress": "^1.1.8",
     "q": "^1.0.1",
-    "request": "^2.40.0",
-    "xml2js": "^0.4.4",
     "xmlrpc": "^1.2.0"
   },
   "devDependencies": {
