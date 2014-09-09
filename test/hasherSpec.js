@@ -4,21 +4,23 @@ var path = require('path');
 describe('hasher module', function() {
   var hasher = require('../lib/hasher');
 
-  it('calculates file hash', function(done) {
-    var file = path.join(__dirname, 'fixtures', 'one.txt');
+  var getFixturePath = function(name) {
+    return path.join(__dirname, 'fixtures', name);
+  };
 
-    hasher(file).done(function(hash) {
+  it('calculates file hash', function() {
+    var filePath = getFixturePath('one.avi');
+
+    return hasher(filePath).then(function(hash) {
       expect(hash).to.eq('14cadce2');
-      done();
     });
   });
 
-  it('calculates file hash', function(done) {
-    var file = path.join(__dirname, 'fixtures', 'two.txt');
+  it('calculates file hash', function() {
+    var filePath = getFixturePath('two.mkv');
 
-    hasher(file).done(function(hash) {
+    return hasher(filePath).then(function(hash) {
       expect(hash).to.eq('14deeeec');
-      done();
     });
   });
 });
