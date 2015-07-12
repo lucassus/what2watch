@@ -7,7 +7,7 @@
     "what2watch": "./bin/what2watch"
   },
   "scripts": {
-    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --reporter spec spec/**/*Spec.js"
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
