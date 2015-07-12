@@ -4,7 +4,7 @@ var sinon = require('sinon');
 
 var expect = require('chai').expect;
 
-var OpenSubtitles = require('../lib/openSubtitles');
+var OpenSubtitles = require('../lib/open_subtitles');
 
 describe('OpenSubtitles', function() {
 
