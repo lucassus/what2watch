@@ -1,19 +1,19 @@
 {
   "name": "what2watch",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "Simple tool for collecting movie details",
   "main": "./index.js",
   "bin": {
     "what2watch": "./bin/what2watch"
   },
   "scripts": {
-    "test": "gulp"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:lucassus/what2watch.git"
   },
-  "author": "",
+  "author": "Lukasz Bandzarewicz",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
