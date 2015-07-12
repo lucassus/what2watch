@@ -1,5 +1,6 @@
-var expect = require('chai').expect;
 var path = require('path');
+
+var expect = require('chai').expect;
 
 describe('hasher module', function() {
   var hasher = require('../lib/hasher');
