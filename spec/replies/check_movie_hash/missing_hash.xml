@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>status</name>
+            <value>
+              <string>200 OK</string>
+            </value>
+          </member>
+          <member>
+            <name>data</name>
+            <value>
+              <struct>
+                <member>
+                  <name>14deeeec</name>
+                  <value>
+                    <array>
+                      <data/>
+                    </array>
+                  </value>
+                </member>
+              </struct>
+            </value>
+          </member>
+          <member>
+            <name>not_processed</name>
+            <value>
+              <array>
+                <data/>
+              </array>
+            </value>
+          </member>
+          <member>
+            <name>seconds</name>
+            <value>
+              <double>0.02</double>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>

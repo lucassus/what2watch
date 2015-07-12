@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>status</name>
+            <value>
+              <string>200 OK</string>
+            </value>
+          </member>
+          <member>
+            <name>data</name>
+            <value>
+              <struct>
+                <member>
+                  <name>genres</name>
+                  <value>
+                    <array>
+                      <data>
+                        <value>
+                          <string>Action</string>
+                        </value>
+                        <value>
+                          <string>Adventure</string>
+                        </value>
+                        <value>
+                          <string>Fantasy</string>
+                        </value>
+                        <value>
+                          <string>Sci-Fi</string>
+                        </value>
+                      </data>
+                    </array>
+                  </value>
+                </member>
+                <member>
+                  <name>from_redis</name>
+                  <value>
+                    <string>false</string>
+                  </value>
+                </member>
+                <member>
+                  <name>goofs</name>
+                  <value>
+                    <string>The pearl shoulder straps of Padme's dress disentangle between shots.
+                    </string>
+                  </value>
+                </member>
+                <member>
+                  <name>plot</name>
+                  <value>
+                    <string>As the Clone Wars near an end, the Sith Lord Darth Sidious steps out of
+                      the shadows, at which time Anakin succumbs to his emotions, becoming Darth
+                      Vader and putting his relationships with Obi-Wan and Padme at risk.
+                    </string>
+                  </value>
+                </member>
+                <member>
+                  <name>aka</name>
+                  <value>
+                    <array>
+                      <data>
+                        <value>
+                          <string>Argentina (Star Wars: Episodio III - La venganza de los Sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Austria (Star Wars: Episode III - Die Rache der Sith)</string>
+                        </value>
+                        <value>
+                          <string>Belgium (French title) (Star wars: Episode III - La revanche des
+                            sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Bulgaria (Bulgarian title) (Междузвездни войни: Епизод III -
+                            Отмъщението на Ситите)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Brazil (Star Wars: Episódio III - A Vingança dos Sith)</string>
+                        </value>
+                        <value>
+                          <string>Canada (French title) (Star wars: Episode III - La revanche des
+                            sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Czech Republic (Star Wars: Pomsta Sithu)</string>
+                        </value>
+                        <value>
+                          <string>Germany (Star Wars: Episode III - Die Rache der Sith)</string>
+                        </value>
+                        <value>
+                          <string>Denmark (Star Wars: Episode III - Sith-fyrsternes hævn)</string>
+                        </value>
+                        <value>
+                          <string>Estonia (Star wars: Osa III - Sithi kättemaks)</string>
+                        </value>
+                        <value>
+                          <string>Spain (Catalan title) (Star Wars: Episodi III - La venjança dels
+                            sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Spain (Star Wars: Episodio III - La venganza de los Sith)</string>
+                        </value>
+                        <value>
+                          <string>Finland (Star Wars: Episodi III - Sithin kosto)</string>
+                        </value>
+                        <value>
+                          <string>France (Star Wars: Épisode III - La revanche des Sith)</string>
+                        </value>
+                        <value>
+                          <string>Greece (Star Wars: Επεισόδιο 3 - Η εκδίκηση των Σιθ)</string>
+                        </value>
+                        <value>
+                          <string>Greece (alternative transliteration) (Star Wars III: I ekdikisi
+                            ton Sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Greece (alternative transliteration) (Star Wars: Epeisodio III - I
+                            ekdikisi ton Sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Croatia (Ratovi zvijezda: Epizoda III - Osveta sitha)</string>
+                        </value>
+                        <value>
+                          <string>Hungary (Star wars III. rész: A Sith-ek bosszúja)</string>
+                        </value>
+                        <value>
+                          <string>Israel (alternative title) (Hebrew title) (Milhemet ha'kohavim,
+                            perek III: nikmat ha'Sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Italy (Star Wars: Episodio III - La vendetta dei Sith)</string>
+                        </value>
+                        <value>
+                          <string>Japan (Sutâ wôzu episoddo 3 - Shisu no fukushû)</string>
+                        </value>
+                        <value>
+                          <string>Lithuania (Zvaigzdziu karai. Situ kerstas)</string>
+                        </value>
+                        <value>
+                          <string>Mexico (La guerra de las galaxias: Episodio III - La venganza de
+                            los sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Mexico (DVD box title) (Star Wars, Episodio III: La venganza de
+                            los Sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Malaysia (Malay title) (Perang bintang: Episod III - Dendam
+                            kumpulan sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Norway (Star wars: Episode III - Sithene tar hevn)</string>
+                        </value>
+                        <value>
+                          <string>Peru (La guerra de las galaxias: Episodio III - La venganza de los
+                            sith)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Poland (Gwiezdne wojny: Czesc III - Zemsta Sithów)</string>
+                        </value>
+                        <value>
+                          <string>Portugal (Star Wars: Episódio III - A Vingança dos Sith)</string>
+                        </value>
+                        <value>
+                          <string>Portugal (3-D version) (Star Wars: Episódio III - A Vingança dos
+                            Sith 3D)
+                          </string>
+                        </value>
+                        <value>
+                          <string>Serbia (Ratovi zvezda - Osveta sita)</string>
+                        </value>
+                        <value>
+                          <string>Russia (Звёздные войны. Эпизод 3: Месть Ситхов)</string>
+                        </value>
+                        <value>
+                          <string>Sweden (Star Wars: Episod III - Mörkrets hämnd)</string>
+                        </value>
+                        <value>
+                          <string>Turkey (Turkish title) (Yildiz Savaslari: Bölüm III - Sith'in
+                            Intikami)
+                          </string>
+                        </value>
+                        <value>
+                          <string>USA (short title) (Revenge of the Sith)</string>
+                        </value>
+                        <value>
+                          <string>USA (DVD box title) (Star Wars III: Revenge of the Sith)</string>
+                        </value>
+                        <value>
+                          <string>USA (working title) (Star Wars: Episode III)</string>
+                        </value>
+                        <value>
+                          <string>USA (3-D version) (Star Wars: Episode III - Revenge of the Sith
+                            3D)
+                          </string>
+                        </value>
+                        <value>
+                          <string>USA (promotional title) (Star Wars: Revenge of the Sith)</string>
+                        </value>
+                        <value>
+                          <string>Venezuela (La guerra de las galaxias: Episodio III - La venganza
+                            de los sith)
+                          </string>
+                        </value>
+                      </data>
+                    </array>
+                  </value>
+                </member>
+                <member>
+                  <name>kind</name>
+                  <value>
+                    <string>movie</string>
+                  </value>
+                </member>
+                <member>
+                  <name>votes</name>
+                  <value>
+                    <string>430208</string>
+                  </value>
+                </member>
+                <member>
+                  <name>imdb_status</name>
+                  <value>
+                    <string>Fresh</string>
+                  </value>
+                </member>
+                <member>
+                  <name>directors</name>
+                  <value>
+                    <struct>
+                      <member>
+                        <name>_0000184</name>
+                        <value>
+                          <string>George Lucas</string>
+                        </value>
+                      </member>
+                    </struct>
+                  </value>
+                </member>
+                <member>
+                  <name>duration</name>
+                  <value>
+                    <string>140 min</string>
+                  </value>
+                </member>
+                <member>
+                  <name>language</name>
+                  <value>
+                    <array>
+                      <data>
+                        <value>
+                          <string>English</string>
+                        </value>
+                      </data>
+                    </array>
+                  </value>
+                </member>
+                <member>
+                  <name>id</name>
+                  <value>
+                    <string>0121766</string>
+                  </value>
+                </member>
+                <member>
+                  <name>cover</name>
+                  <value>
+                    <string>
+                      http://ia.media-imdb.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_SY317_CR12,0,214,317_AL_.jpg
+                    </string>
+                  </value>
+                </member>
+                <member>
+                  <name>cast</name>
+                  <value>
+                    <struct>
+                      <member>
+                        <name>_0000191</name>
+                        <value>
+                          <string>Ewan McGregor</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0000204</name>
+                        <value>
+                          <string>Natalie Portman</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0159789</name>
+                        <value>
+                          <string>Hayden Christensen</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0001519</name>
+                        <value>
+                          <string>Ian McDiarmid</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0000168</name>
+                        <value>
+                          <string>Samuel L. Jackson</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0001751</name>
+                        <value>
+                          <string>Jimmy Smits</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0000568</name>
+                        <value>
+                          <string>Frank Oz</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0000355</name>
+                        <value>
+                          <string>Anthony Daniels</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0000489</name>
+                        <value>
+                          <string>Christopher Lee</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_1095720</name>
+                        <value>
+                          <string>Keisha Castle-Hughes</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0141324</name>
+                        <value>
+                          <string>Silas Carson</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0481092</name>
+                        <value>
+                          <string>Jay Laga'aia</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0817748</name>
+                        <value>
+                          <string>Bruce Spence</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0701460</name>
+                        <value>
+                          <string>Wayne Pygram</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0607325</name>
+                        <value>
+                          <string>Temuera Morrison</string>
+                        </value>
+                      </member>
+                    </struct>
+                  </value>
+                </member>
+                <member>
+                  <name>rating</name>
+                  <value>
+                    <string>7.7</string>
+                  </value>
+                </member>
+                <member>
+                  <name>country</name>
+                  <value>
+                    <array>
+                      <data>
+                        <value>
+                          <string>USA</string>
+                        </value>
+                      </data>
+                    </array>
+                  </value>
+                </member>
+                <member>
+                  <name>tagline</name>
+                  <value>
+                    <string>The saga is complete.</string>
+                  </value>
+                </member>
+                <member>
+                  <name>title</name>
+                  <value>
+                    <string>Star Wars: Episode III - Revenge of the Sith</string>
+                  </value>
+                </member>
+                <member>
+                  <name>trivia</name>
+                  <value>
+                    <string>The scene of Vader and Obi-Wan using the &#34;force push&#34; on each
+                      other and knocking each other back originally had a force field graphic effect
+                      added, but George Lucas was not satisfied with its inclusion, thus the final
+                      shot did not have this effect added. See more &#62;&#62;</string>
+                  </value>
+                </member>
+                <member>
+                  <name>year</name>
+                  <value>
+                    <string>2005</string>
+                  </value>
+                </member>
+                <member>
+                  <name>request_from</name>
+                  <value>
+                    <string>cache_redis</string>
+                  </value>
+                </member>
+              </struct>
+            </value>
+          </member>
+          <member>
+            <name>seconds</name>
+            <value>
+              <double>0.05</double>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>
