@@ -11,7 +11,7 @@ gulp.task('test', function (cb) {
         .pipe(mocha())
         .pipe(istanbul.writeReports({
           dir: '.coverage',
-          reporters: ['html', 'text']
+          reporters: ['html', 'text', 'lcovonly']
         }))
         .on('end', cb);
     });
