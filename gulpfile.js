@@ -1,6 +1,12 @@
 var gulp = require('gulp');
 var istanbul = require('gulp-istanbul');
+var jscs = require('gulp-jscs');
 var mocha = require('gulp-mocha');
+
+gulp.task('jscs', function () {
+  return gulp.src(['lib/**/*.js', 'bin/*'])
+    .pipe(jscs());
+});
 
 gulp.task('test', function (cb) {
   gulp.src(['lib/**/!(*_spec).js'])
@@ -17,4 +23,4 @@ gulp.task('test', function (cb) {
     });
 });
 
-gulp.task('default', ['test']);
+gulp.task('default', ['jscs', 'test']);
