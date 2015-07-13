@@ -1,7 +1,7 @@
 # what2watch
 
 [![Build Status](https://travis-ci.org/lucassus/what2watch.svg?branch=master)](https://travis-ci.org/lucassus/what2watch)
-[![Coverage Status](https://coveralls.io/repos/lucassus/what2watch/badge.svg?branch=coveralls&service=github)](https://coveralls.io/github/lucassus/what2watch?branch=coveralls)
+[![Coverage Status](https://coveralls.io/repos/lucassus/what2watch/badge.svg?s&service=github)](https://coveralls.io/github/lucassus/what2watch)
 [![Dependency Status](https://gemnasium.com/lucassus/what2watch.svg)](https://gemnasium.com/lucassus/what2watch)
 
 Simple tool that scans the given directory for movies and uses OpenSubtitles API to query for details.
