@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/lucassus/what2watch.svg?branch=master)](https://travis-ci.org/lucassus/what2watch)
 [![Coverage Status](https://coveralls.io/repos/lucassus/what2watch/badge.svg?s&service=github)](https://coveralls.io/github/lucassus/what2watch)
 [![Dependency Status](https://gemnasium.com/lucassus/what2watch.svg)](https://gemnasium.com/lucassus/what2watch)
+[![npm version](https://badge.fury.io/js/what2watch.svg)](http://badge.fury.io/js/what2watch)
 
 Simple tool that scans the given directory for movies and uses OpenSubtitles API to query for details.
 The final results are sorted by rating.
