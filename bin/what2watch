@@ -50,7 +50,10 @@ Q(program.directory).then(function(directory) {
     .reverse()
     .value();
 }).then(function(stats) {
-  _.each(stats, printMovie);
+  _.each(stats, function(stat) {
+    console.log('\n---------------------\n');
+    console.log(printMovie(stat));
+  });
 }).catch(function(err) {
   console.log('err:', err);
   process.exit(1);

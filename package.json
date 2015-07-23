@@ -2,7 +2,6 @@
   "name": "what2watch",
   "version": "0.1.1",
   "description": "Simple tool for collecting movie details",
-  "main": "./index.js",
   "bin": {
     "what2watch": "./bin/what2watch"
   },
@@ -16,7 +15,7 @@
   "author": "Lukasz Bandzarewicz",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.1.2",
+    "chalk": "^1.1.0",
     "commander": "^2.8.1",
     "glob": "^5.0.13",
     "lodash": "^3.10.0",

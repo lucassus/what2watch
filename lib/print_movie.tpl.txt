@@ -1,0 +1,13 @@
+<%= title %>
+<%= plot %>
+
+   Rating: <%= rating %>
+     Year: <%= year %>
+ Duration: <%= duration %>
+   Genres: <%= genres %>
+Directors: <%= directors %>
+     Cast: <%= cast %>
+  Country: <%= country %>
+ Language: <%= language %>
+     Imdb: <%= imdbUrl %>
+     File: <%= filePath %>
