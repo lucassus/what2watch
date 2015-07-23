@@ -8,6 +8,31 @@
   "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
   "disallowSpaceBeforeBinaryOperators": [","],
   "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
+  "disallowEmptyBlocks": true,
+  "disallowImplicitTypeConversion": ["numeric", "boolean", "binary", "string"],
+  "disallowMixedSpacesAndTabs": true,
+  "disallowMultipleLineBreaks": true,
+  "disallowMultipleSpaces": true,
+  "disallowKeywordsOnNewLine": ["else"],
+  "disallowMultipleVarDecl": "exceptUndefined",
+  "disallowNamedUnassignedFunctions": true,
+  "disallowNotOperatorsInConditionals": true,
+  "disallowOperatorBeforeLineBreak": ["+", "."],
+  "disallowQuotedKeysInObjects": true,
+  "disallowSpacesInCallExpression": true,
+  "disallowYodaConditions": true,
+  "requireBlocksOnNewline": 1,
+  "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+  "requireCapitalizedConstructors": true,
+  "requireLineBreakAfterVariableAssignment": true,
+  "requirePaddingNewLinesAfterUseStrict": true,
+  "requirePaddingNewLinesBeforeExport": true,
+  "requireSemicolons": true,
+  "requireSpaceAfterLineComment": { "allExcept": ["#", "="] },
+  "disallowSpacesInsideArrayBrackets": {
+    "allExcept": [ "[", "]", "{", "}" ]
+  },
+  "disallowSpacesInsideParentheses": { "only": [ "{", "}" ] },
   "disallowSpacesInAnonymousFunctionExpression": {
     "beforeOpeningRoundBrace": true
   },
@@ -16,6 +41,13 @@
   },
   "disallowSpacesInNamedFunctionExpression": {
     "beforeOpeningRoundBrace": true
+  },
+  "validateIndentation": 2,
+  "validateLineBreaks": "LF",
+  "validateParameterSeparator": ", ",
+  "validateQuoteMarks": {
+    "escape": true,
+    "mark":  "'"
   },
   "disallowSpacesInsideArrayBrackets": true,
   "disallowSpacesInsideParentheses": true,
