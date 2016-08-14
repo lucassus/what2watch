@@ -34,13 +34,13 @@ Q(program.directory).then(function(directory) {
   return findMovies(program.formats, directory);
 }).then(function(files) {
   console.log('Found', files.length, 'movies');
-  var bar = buildProgressBar('Loading files                 [:bar] :percent :etas', files.length);
+  var bar = buildProgressBar('Loading files    [:bar] :percent :etas', files.length);
   return collectFileStats(files).progress(bar.tick);
 }).then(function(stats) {
-  var bar = buildProgressBar('Trying to find movies         [:bar] :percent :etas', stats.length);
+  var bar = buildProgressBar('Fining movies    [:bar] :percent :etas', stats.length);
   return collectInfo(api, stats).progress(bar.tick);
 }).then(function(stats) {
-  var bar = buildProgressBar('Trying to fetch movie details [:bar] :percent :etas', stats.length);
+  var bar = buildProgressBar('Fetching details [:bar] :percent :etas', stats.length);
   return collectDetails(api, stats).progress(bar.tick);
 }).then(function(stats) {
   // filter, sort etc.
