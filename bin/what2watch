@@ -30,6 +30,10 @@ var buildProgressBar = function(format, total) {
   };
 };
 
+process.on('unhandledRejection', function(promise, reason) {
+  console.log('Unhandled rejection:', reason);
+});
+
 Q(program.directory).then(function(directory) {
   return findMovies(program.formats, directory);
 }).then(function(files) {
@@ -45,8 +49,8 @@ Q(program.directory).then(function(directory) {
 }).then(function(stats) {
   // filter, sort etc.
   return _.chain(stats)
-    .select(function(stat) { return stat.movie && stat.movie.kind !== 'episode'; })
-    .sortBy(function(stat) { return parseFloat(stat.movie.rating); })
+    .filter(function(stat) { return _.get(stat, 'movie.kind') !== 'episode'; })
+    .sortBy(function(stat) { return parseFloat(_.get(stat, 'movie.rating')); })
     .reverse()
     .value();
 }).then(function(stats) {
@@ -55,6 +59,6 @@ Q(program.directory).then(function(directory) {
     console.log(printMovie(stat));
   });
 }).catch(function(err) {
-  console.log('err:', err);
+  console.log('Error:', err);
   process.exit(1);
 }).done();
