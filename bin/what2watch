@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var _ = require('lodash');
-var Q = require('q');
+var Promise = require('bluebird');
 
 var ProgressBar = require('progress');
 
@@ -30,27 +30,27 @@ var buildProgressBar = function(format, total) {
   };
 };
 
-process.on('unhandledRejection', function(promise, reason) {
-  console.log('Unhandled rejection:', reason);
+process.on('unhandledRejection', function(reason) {
+  console.error('Unhandled rejection:', reason);
 });
 
-Q(program.directory).then(function(directory) {
+Promise.resolve(program.directory).then(function(directory) {
   return findMovies(program.formats, directory);
-}).then(function(files) {
-  console.log('Found', files.length, 'movies');
-  var bar = buildProgressBar('Loading files    [:bar] :percent :etas', files.length);
-  return collectFileStats(files).progress(bar.tick);
+}).then(function(paths) {
+  console.log('Found', paths.length, 'movies');
+  var bar = buildProgressBar('Loading files    [:bar] :percent :etas', paths.length);
+  return collectFileStats(paths, bar.tick);
 }).then(function(stats) {
   var bar = buildProgressBar('Fining movies    [:bar] :percent :etas', stats.length);
-  return collectInfo(api, stats).progress(bar.tick);
+  return collectInfo(api, stats, bar.tick);
 }).then(function(stats) {
   var bar = buildProgressBar('Fetching details [:bar] :percent :etas', stats.length);
-  return collectDetails(api, stats).progress(bar.tick);
+  return collectDetails(api, stats, bar.tick);
 }).then(function(stats) {
   // filter, sort etc.
   return _.chain(stats)
     .filter(function(stat) { return _.get(stat, 'movie.kind') !== 'episode'; })
-    .sortBy(function(stat) { return parseFloat(_.get(stat, 'movie.rating')); })
+    .sortBy(function(stat) { return parseFloat(_.get(stat, 'movie.rating', -Infinity)); })
     .reverse()
     .value();
 }).then(function(stats) {
@@ -58,7 +58,7 @@ Q(program.directory).then(function(directory) {
     console.log('\n---------------------\n');
     console.log(printMovie(stat));
   });
-}).catch(function(err) {
-  console.log('Error:', err);
+}).catch(function(error) {
+  console.log('Error:', error);
   process.exit(1);
-}).done();
+});
