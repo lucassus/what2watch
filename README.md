@@ -32,9 +32,7 @@ The final results are sorted by rating.
 `what2watch --directory /path/to/movies`
 
 ```
-Loading files                 [===============] 100% 0.0s
-Trying to find movies         [===============] 100% 0.0s
-Trying to fetch movie details [===============] 100% 0.0s
+Working [==============================] 100% 0.0s
 
 ----------------------------
 

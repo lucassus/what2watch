@@ -18,9 +18,9 @@ var OpenSubtitles = require('../lib/open_subtitles');
 var api = new OpenSubtitles();
 
 var findMovies = require('../lib/find_movies');
-var collectFileStats = require('../lib/collect_file_stats');
-var collectInfo = require('../lib/collect_info');
-var collectDetails = require('../lib/collect_details');
+var fetchFileStat = require('../lib/fetch_file_stat');
+var fetchMovieInfo = require('../lib/fetch_movie_info');
+var fetchMovieDetails = require('../lib/fetch_movie_details');
 var printMovie = require('../lib/print_movie');
 
 var buildProgressBar = function(format, total) {
@@ -34,18 +34,37 @@ process.on('unhandledRejection', function(reason) {
   console.error('Unhandled rejection:', reason);
 });
 
+function queryMovie(path, tick) {
+  return fetchFileStat(path).then(function(file) {
+    return Promise.all([
+      file,
+      fetchMovieInfo(api, file).catch(function() {
+        return {};
+      })
+    ]);
+  }).spread(function(file, info) {
+    return Promise.all([
+      file,
+      info,
+      fetchMovieDetails(api, info).catch(function() {
+        return {};
+      })
+    ]);
+  }).spread(function(file, info, movie) {
+    return _.extend({}, { file: file }, { movie: movie });
+  }).finally(tick);
+}
+
 Promise.resolve(program.directory).then(function(directory) {
   return findMovies(program.formats, directory);
 }).then(function(paths) {
   console.log('Found', paths.length, 'movies');
-  var bar = buildProgressBar('Loading files    [:bar] :percent :etas', paths.length);
-  return collectFileStats(paths, bar.tick);
-}).then(function(stats) {
-  var bar = buildProgressBar('Fining movies    [:bar] :percent :etas', stats.length);
-  return collectInfo(api, stats, bar.tick);
-}).then(function(stats) {
-  var bar = buildProgressBar('Fetching details [:bar] :percent :etas', stats.length);
-  return collectDetails(api, stats, bar.tick);
+
+  var bar = buildProgressBar('Working [:bar] :percent :etas', paths.length);
+
+  return Promise.map(paths, function(path) {
+    return queryMovie(path, bar.tick);
+  }, { concurrency: 8 });
 }).then(function(stats) {
   // filter, sort etc.
   return _.chain(stats)
