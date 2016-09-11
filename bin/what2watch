@@ -51,7 +51,7 @@ function queryMovie(path, tick) {
       })
     ]);
   }).spread(function(file, info, movie) {
-    return _.extend({}, { file: file }, { movie: movie });
+    return _.extend({}, { file: file }, { movie: _.extend({}, info, movie) });
   }).finally(tick);
 }
 
@@ -66,10 +66,17 @@ Promise.resolve(program.directory).then(function(directory) {
     return queryMovie(path, bar.tick);
   }, { concurrency: 8 });
 }).then(function(stats) {
-  // filter, sort etc.
+  // TODO display unprocessed movies
   return _.chain(stats)
-    .filter(function(stat) { return _.get(stat, 'movie.kind') !== 'episode'; })
-    .sortBy(function(stat) { return parseFloat(_.get(stat, 'movie.rating', -Infinity)); })
+    .filter(function(stat) {
+      return Boolean(_.get(stat, 'movie.imdbId'));
+    })
+    .filter(function(stat) {
+      return _.get(stat, 'movie.kind') !== 'episode';
+    })
+    .sortBy(function(stat) {
+      return parseFloat(_.get(stat, 'movie.rating', -Infinity));
+    })
     .reverse()
     .value();
 }).then(function(stats) {

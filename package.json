@@ -1,6 +1,6 @@
 {
   "name": "what2watch",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Simple tool for collecting movie details",
   "bin": {
     "what2watch": "./bin/what2watch"
