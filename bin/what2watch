@@ -55,8 +55,8 @@ function queryMovie(path, tick) {
   }).finally(tick);
 }
 
-Promise.resolve(program.directory).then(function(directory) {
-  return findMovies(program.formats, directory);
+api.login().then(function() {
+  return findMovies(program.formats, program.directory);
 }).then(function(paths) {
   console.log('Found', paths.length, 'movies');
 
