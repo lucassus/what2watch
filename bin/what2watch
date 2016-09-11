@@ -66,24 +66,41 @@ Promise.resolve(program.directory).then(function(directory) {
     return queryMovie(path, bar.tick);
   }, { concurrency: 8 });
 }).then(function(stats) {
-  // TODO display unprocessed movies
-  return _.chain(stats)
-    .filter(function(stat) {
-      return Boolean(_.get(stat, 'movie.imdbId'));
+  return Promise.all([
+    _.chain(stats)
+      .filter(function(stat) {
+        return Boolean(_.get(stat, 'movie.imdbId'));
+      })
+      .filter(function(stat) {
+        return _.get(stat, 'movie.kind') !== 'episode';
+      })
+      .sortBy(function(stat) {
+        return parseFloat(_.get(stat, 'movie.rating', -Infinity));
+      })
+      .reverse()
+      .value(),
+
+    _.filter(stats, function(stat) {
+      return !Boolean(_.get(stat, 'movie.imdbId'));
     })
-    .filter(function(stat) {
-      return _.get(stat, 'movie.kind') !== 'episode';
-    })
-    .sortBy(function(stat) {
-      return parseFloat(_.get(stat, 'movie.rating', -Infinity));
-    })
-    .reverse()
-    .value();
-}).then(function(stats) {
+  ]);
+}).spread(function(stats, unprocessedStats) {
   _.each(stats, function(stat) {
     console.log('\n---------------------\n');
     console.log(printMovie(stat));
   });
+
+  if (unprocessedStats.length > 0) {
+    console.log('\nNot found movies:');
+
+    var paths = _.sortBy(_.map(stats, function(stat) {
+      return _.get(stat, 'file.path');
+    }));
+
+    _.each(paths, function(path) {
+      console.log(path);
+    });
+  }
 }).catch(function(error) {
   console.log('Error:', error);
   process.exit(1);
