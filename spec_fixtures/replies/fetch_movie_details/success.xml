@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>status</name>
+            <value>
+              <string>200 OK</string>
+            </value>
+          </member>
+          <member>
+            <name>data</name>
+            <value>
+              <struct>
+                <member>
+                  <name>plot</name>
+                  <value>
+                    <string>A young FBI agent disappears while investigating a murder miles from Twin Peaks that may be
+                      related to the future murder of Laura Palmer; the last week of the life of Laura Palmer is
+                      chronicled.
+                    </string>
+                  </value>
+                </member>
+                <member>
+                  <name>cover</name>
+                  <value>
+                    <string>
+                      http://ia.media-imdb.com/images/M/MV5BNDg0NzU3NjMzNV5BMl5BanBnXkFtZTYwODAxMTI5._V1_UY268_CR1,0,182,268_AL_.jpg
+                    </string>
+                  </value>
+                </member>
+                <member>
+                  <name>awards</name>
+                  <value>
+                    <array>
+                      <data>
+                        <value>
+                          <string>3 wins &#38; 6 nominations.</string>
+                        </value>
+                      </data>
+                    </array>
+                  </value>
+                </member>
+                <member>
+                  <name>tagline</name>
+                  <value>
+                    <string>Meet Laura Palmer... In a town where nothing is as it seems... And everyone has something to
+                      hide.
+                    </string>
+                  </value>
+                </member>
+                <member>
+                  <name>country</name>
+                  <value>
+                    <array>
+                      <data>
+                        <value>
+                          <string>USA</string>
+                        </value>
+                        <value>
+                          <string>France</string>
+                        </value>
+                      </data>
+                    </array>
+                  </value>
+                </member>
+                <member>
+                  <name>trivia</name>
+                  <value>
+                    <string>David Lynch: [Sunset Blvd.] Lynch's character Gordon Cole is named after an oft-mentioned
+                      character from Sunset Blvd. (1950). See more &#62;&#62;</string>
+                  </value>
+                </member>
+                <member>
+                  <name>imdb_status</name>
+                  <value>
+                    <string>Fresh</string>
+                  </value>
+                </member>
+                <member>
+                  <name>votes</name>
+                  <value>
+                    <string>55748</string>
+                  </value>
+                </member>
+                <member>
+                  <name>aka</name>
+                  <value>
+                    <array>
+                      <data>
+                        <value>
+                          <string>Bulgaria (Bulgarian title) (Туин Пийкс)</string>
+                        </value>
+                        <value>
+                          <string>Bulgaria (Bulgarian title) (Туин Пийкс: Огън, следвай ме)</string>
+                        </value>
+                        <value>
+                          <string>Brazil (Twin Peaks: Os Últimos Dias de Laura Palmer)</string>
+                        </value>
+                        <value>
+                          <string>Germany (Twin Peaks - Der Film)</string>
+                        </value>
+                        <value>
+                          <string>Denmark (Twin Peaks - Laura Palmers sidste dage)</string>
+                        </value>
+                        <value>
+                          <string>Spain (alternative title) (Castilian title) (Twin Peaks (El diario de Laura Palmer))
+                          </string>
+                        </value>
+                        <value>
+                          <string>Spain (Twin Peaks: fuego camina conmigo)</string>
+                        </value>
+                        <value>
+                          <string>Finland (Swedish title) (Twin Peaks - eld vandra med mig)</string>
+                        </value>
+                        <value>
+                          <string>Finland (Twin Peaks - tuli kulje kanssani)</string>
+                        </value>
+                        <value>
+                          <string>France (DVD title) (Twin Peaks - Fire Walk with Me)</string>
+                        </value>
+                        <value>
+                          <string>France (Twin Peaks - Les 7 derniers jours de Laura Palmer)</string>
+                        </value>
+                        <value>
+                          <string>Greece (transliterated ISO-LATIN-1 title) (O ypoptos kosmos tou Twin Peaks)</string>
+                        </value>
+                        <value>
+                          <string>Greece (Ο ύποπτος κόσμος του Τουίν Πικς)</string>
+                        </value>
+                        <value>
+                          <string>Hungary (Twin Peaks: Tűz, jöjj velem!)</string>
+                        </value>
+                        <value>
+                          <string>Italy (Fuoco cammina con me)</string>
+                        </value>
+                        <value>
+                          <string>Mexico (Twin Peaks: fuego camina conmigo)</string>
+                        </value>
+                        <value>
+                          <string>Poland (Miasteczko Twin Peaks: Ogniu, krocz ze mna)</string>
+                        </value>
+                        <value>
+                          <string>Portugal (Twin Peaks: Os Últimos Sete Dias de Laura Palmer)</string>
+                        </value>
+                        <value>
+                          <string>Serbia (Tvin Piks: Vatro, hodaj sa mnom)</string>
+                        </value>
+                        <value>
+                          <string>Russia (Твин Пикс: Сквозь огонь)</string>
+                        </value>
+                        <value>
+                          <string>Slovenia (Twin Peaks - Ogenj hodi z menoj)</string>
+                        </value>
+                        <value>
+                          <string>Turkey (Turkish title) (Ikiz Tepeler: Ateste Benimle Yürü)</string>
+                        </value>
+                        <value>
+                          <string>Ukraine (Твiн Пiкс: Вогню, iди зi мною)</string>
+                        </value>
+                        <value>
+                          <string>USA (working title) (Twin Peaks: Fire Walk with Me, Teresa Banks and the Last Seven
+                            Days of Laura Palmer)
+                          </string>
+                        </value>
+                      </data>
+                    </array>
+                  </value>
+                </member>
+                <member>
+                  <name>id</name>
+                  <value>
+                    <string>0105665</string>
+                  </value>
+                </member>
+                <member>
+                  <name>genres</name>
+                  <value>
+                    <array>
+                      <data>
+                        <value>
+                          <string>Drama</string>
+                        </value>
+                        <value>
+                          <string>Fantasy</string>
+                        </value>
+                        <value>
+                          <string>Horror</string>
+                        </value>
+                        <value>
+                          <string>Mystery</string>
+                        </value>
+                        <value>
+                          <string>Thriller</string>
+                        </value>
+                      </data>
+                    </array>
+                  </value>
+                </member>
+                <member>
+                  <name>from_redis</name>
+                  <value>
+                    <string>false</string>
+                  </value>
+                </member>
+                <member>
+                  <name>kind</name>
+                  <value>
+                    <string>movie</string>
+                  </value>
+                </member>
+                <member>
+                  <name>directors</name>
+                  <value>
+                    <struct>
+                      <member>
+                        <name>_0000186</name>
+                        <value>
+                          <string>David Lynch</string>
+                        </value>
+                      </member>
+                    </struct>
+                  </value>
+                </member>
+                <member>
+                  <name>duration</name>
+                  <value>
+                    <string>135 min</string>
+                  </value>
+                </member>
+                <member>
+                  <name>language</name>
+                  <value>
+                    <array>
+                      <data>
+                        <value>
+                          <string>English</string>
+                        </value>
+                      </data>
+                    </array>
+                  </value>
+                </member>
+                <member>
+                  <name>year</name>
+                  <value>
+                    <string>1992</string>
+                  </value>
+                </member>
+                <member>
+                  <name>title</name>
+                  <value>
+                    <string>Twin Peaks: Fire Walk with Me</string>
+                  </value>
+                </member>
+                <member>
+                  <name>cast</name>
+                  <value>
+                    <struct>
+                      <member>
+                        <name>_0498247</name>
+                        <value>
+                          <string>Sheryl Lee</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0936403</name>
+                        <value>
+                          <string>Ray Wise</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0000749</name>
+                        <value>
+                          <string>Mädchen Amick</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0000796</name>
+                        <value>
+                          <string>Dana Ashbrook</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0041935</name>
+                        <value>
+                          <string>Phoebe Augustine</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0000309</name>
+                        <value>
+                          <string>David Bowie</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0201121</name>
+                        <value>
+                          <string>Eric DaRe</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0001208</name>
+                        <value>
+                          <string>Miguel Ferrer</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0317293</name>
+                        <value>
+                          <string>Pamela Gidley</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0001287</name>
+                        <value>
+                          <string>Heather Graham</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0001389</name>
+                        <value>
+                          <string>Chris Isaak</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0446702</name>
+                        <value>
+                          <string>Moira Kelly</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0005152</name>
+                        <value>
+                          <string>Peggy Lipton</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0000186</name>
+                        <value>
+                          <string>David Lynch</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>_0338614</name>
+                        <value>
+                          <string>James Marshall</string>
+                        </value>
+                      </member>
+                    </struct>
+                  </value>
+                </member>
+                <member>
+                  <name>rating</name>
+                  <value>
+                    <string>7.2</string>
+                  </value>
+                </member>
+                <member>
+                  <name>request_from</name>
+                  <value>
+                    <string>api_cache_redis</string>
+                  </value>
+                </member>
+              </struct>
+            </value>
+          </member>
+          <member>
+            <name>seconds</name>
+            <value>
+              <double>0.002</double>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>
