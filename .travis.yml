@@ -10,4 +10,4 @@ deploy:
   provider: npm
   email: lucassus@gmail.com
   api_key:
-    secure: DyEvS9DLjDKipOlx5RE19HO3QIvaSmlpIAVAjbLCWEi0LVqMbdtIgnc7K4sfTkOsDXPbms0vRDKwS7Lbs7MyyLAp5LDV/CT3Btk5k7rwXd3bIYAJBtQJC5tPxA1Igl9vow9IkbAH8QkUBCne15DWxFUw6BX9Xd8WtpHPge+ew2s=
+    secure: R9Bx26CeIxEMw/cWel0JYqp452QrbTSzz6AP2GMEIaYIfTIYn8yt5z3LoZMPJ2bRo2WZu658KZbuTcOsPX+v/95pc/CjIoGoDjHXvqPYIP0waXEgDuxsy9IwZQR0fcn6DqSyAq4IuyLMqf8HWmlqNfdANPMIXkt1S8WZ3f+xuh0=
